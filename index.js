@@ -11,9 +11,6 @@ let { prefix } = require("./config.json");
 let lengthPrefix = prefix.length + 9;
 let lengthPrePrefix = prefix.length + 7;
 
-// var data = fs.readFileSync('./config.json');
-// var words = JSON.parse(data);
-
 bot.on('ready', () =>{
     console.log('This bot is online');
     console.log(lengthPrefix);
@@ -33,7 +30,7 @@ let help = ["info", "embed", "website", "react", 'writeMemo', "getMemo"];
 // let helpLegend = [];
 let helpMod = ["clear", "kick", "prefix", "herstart"];
 
-let testRol = "test"
+let testRol = "bewabotrol"
 
 //Mod Commands
 
@@ -127,7 +124,7 @@ bot.on('message', message=>{
             } else if (args[1] === 'author') {
                 message.channel.sendMessage('Made by Camachameleon');
             } else {
-                message.channel.sendMessage('Kies uit:\r\n' + info.join("-\r\n"));
+                message.channel.sendMessage('Kies uit:\r\n' + info.join("\r\n"));
             }
             break;
 
