@@ -115,7 +115,7 @@ bot.on('message', message=>{
         //     break;
 
         case 'website':
-            message.channel.sendMessage('http://camachameleon.epizy.com/?i=2');
+            message.channel.sendMessage('https://bewasite-651f5.web.app');
             break;
 
         case 'info':
